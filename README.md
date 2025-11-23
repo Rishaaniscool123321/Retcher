@@ -1,6 +1,6 @@
 # Retcher
 
-> Retcher – made by Rishaan. A personal fork of Etcher with my tweaks.
+> Retcher – made by Rishaan. A personal fork of Etcher with my tweaks. Retcher is my custom version of balenaEtcher. I use it for my own projects and for fun hacking with OS images.
 
 Etcher is a powerful OS image flasher built with web technologies to ensure
 flashing an SDCard or USB drive is a pleasant and safe experience. It protects
