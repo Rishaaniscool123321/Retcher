@@ -1,4 +1,5 @@
-"name": "retcher",
+{
+  "name": "retcher",
 "private": true,
 "displayName": "Retcher",
 "productName": "Retcher",
@@ -8,8 +9,25 @@
 "description": "Flash OS images to SD cards and USB drives with my custom Retcher build.",
 "productDescription": "Retcher is my custom OS image flasher, forked from balenaEtcher. It helps you safely flash SD cards and USB drives while protecting your main drives and verifying every byte.",
 "homepage": "https://github.com/Rishaaniscool123321/Retcher",
-...
-"author": "Rishaan <your-email-or-github-here>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:balena-io/etcher.git"
+  },
+  "scripts": {
+    "prettify": "prettier --write lib/**/*.css && balena-lint --fix --typescript typings lib tests forge.config.ts forge.sidecar.ts webpack.config.ts",
+    "lint": "npm run prettify && catch-uncommitted",
+    "test": "echo 'Only use custom tests; if you want to test locally, use `npm run wdio`' && exit 0",
+    "package": "electron-forge package",
+    "start": "electron-forge start",
+    "make": "electron-forge make",
+    "wdio": "xvfb-maybe wdio run ./wdio.conf.ts"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run prettify"
+    }
+  },
+"author": "Rishaan <Retcher67@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
     "@electron/remote": "^2.1.2",
