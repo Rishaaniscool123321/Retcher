@@ -1,6 +1,6 @@
-# Etcher
+# Retcher
 
-> Flash OS images to SD cards & USB drives, safely and easily.
+> Retcher – made by Rishaan. A personal fork of Etcher with my tweaks.
 
 Etcher is a powerful OS image flasher built with web technologies to ensure
 flashing an SDCard or USB drive is a pleasant and safe experience. It protects
